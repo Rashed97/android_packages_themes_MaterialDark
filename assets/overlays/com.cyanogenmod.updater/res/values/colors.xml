@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing CMUpdater.apk's Colors-->
+
+<resources>
+    <color name="theme_accent">#ffffffff</color>
+    <color name="backdrop">#ff1a1f22</color>
+</resources>

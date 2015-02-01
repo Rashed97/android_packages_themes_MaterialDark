@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing CMUpdater.apk's Styles-->
+
+<resources>
+    <style name="Theme.Main" parent="@android:style/Theme.Material">
+        <item name="android:colorBackground">@color/backdrop</item>
+        <item name="android:statusBarColor">@color/theme_primary</item>
+    </style>
+</resources>
