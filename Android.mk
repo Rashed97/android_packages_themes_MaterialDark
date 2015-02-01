@@ -17,17 +17,27 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
-LOCAL_SRC_FILES := $(call all-subdir-java-files)
-
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay
 LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
 
 LOCAL_PACKAGE_NAME := material-dark
-LOCAL_CERTIFICATE := platform
-LOCAL_PROGUARD_FLAG_FILES := proguard.flags
+# Disable proguard, for now.
+#LOCAL_CERTIFICATE := platform
+#LOCAL_PROGUARD_FLAG_FILES := proguard.flags
+
+LOCAL_ADDITIONAL_DEPENDENCIES += $(LOCAL_PATH)/Android.mk
+include $(call all-makefiles-under,$(LOCAL_PATH))
+
+ifeq ($(TARGET_BOOTANIMATION_HALF_RES),true)
+LOCAL_ASSET_DIR := \
+    $(LOCAL_PATH)/assets \
+    $(LOCAL_PATH)/bootanimation/halfres/$(TARGET_BOOTANIMATION_NAME)
+else
+LOCAL_ASSET_DIR := \
+    $(LOCAL_PATH)/assets \
+    $(LOCAL_PATH)/bootanimation/$(TARGET_BOOTANIMATION_NAME)
+endif
 
 include $(BUILD_PACKAGE)
-
-include $(call all-makefiles-under,$(LOCAL_PATH))
