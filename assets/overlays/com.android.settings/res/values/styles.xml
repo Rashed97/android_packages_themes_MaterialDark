@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Settings.apk's Styles-->
+
+<resources>
+	<!-- Style of main settings, do not remove SettingsBase as parent has been changed -->
+	<style name="Theme.SettingsBase" parent="@android:style/Theme.Material" />
+	<style name="Theme.Settings" parent="@style/Theme.SettingsBase">
+		<item name="android:background">@color/theme_primary</item>
+		<item name="android:statusBarColor">@color/theme_primary</item>
+	</style>
+	
+	<!-- About phone and Status windows, do not remove SubSettingsDialogWhenLarge as parent has been changed -->
+	<style name="Theme.SubSettingsDialogWhenLarge" parent="@style/Theme.DialogWhenLarge" />
+	<style name="Theme.DialogWhenLarge" parent="@android:style/Theme.Material.DialogWhenLarge">
+		<item name="android:background">@color/theme_primary</item>
+		<item name="android:statusBarColor">@color/theme_primary</item>
+    </style>
+	
+	<!-- Wifi dialog and popup text -->
+	<style name="wifi_item_label">
+		<item name="android:textColor">@color/theme_accent</item>
+    </style>
+    <style name="wifi_item_content">
+		<item name="android:textColor">@color/theme_accent</item>
+    </style>
+    <style name="wifi_item_edit_content">
+		<item name="android:textColor">@color/theme_accent</item>
+    </style>
+</resources>
