@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Browser.apk's Styles-->
+
+<resources>
+    <style name="BrowserTheme" parent="@android:style/Theme.Material">
+        <item name="android:background">@color/primary</item>
+        <item name="android:colorBackground">@color/primary_dark</item>
+        <item name="android:statusBarColor">@color/status_bar</item>
+        <item name="android:windowBackground">@color/primary</item>
+    </style>
+    <style name="PreferencesTheme" parent="@android:style/Theme.Material" >
+		<item name="android:statusBarColor">@color/status_bar</item>
+	</style>
+    <style name="DialogWhenLarge" parent="@android:style/Theme.Material.DialogWhenLarge">
+        <item name="android:popupBackground">@color/primary_dark</item>
+        <item name="android:statusBarColor">@color/status_bar</item>
+    </style>
+    <style name="BookmarkTheme" parent="@android:style/Theme.Material" >
+		<item name="android:statusBarColor">@color/status_bar</item>
+	</style>
+    <style name="Suggestions" parent="@android:style/Widget.Material.AutoCompleteTextView">
+        <item name="android:popupBackground">@color/primary_dark</item>
+        <item name="android:statusBarColor">@color/status_bar</item>
+    </style>
+</resources>
