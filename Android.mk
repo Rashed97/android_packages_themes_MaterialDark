@@ -22,7 +22,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_AAPT_FLAGS := --auto-add-overlay
 LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
 
-LOCAL_PACKAGE_NAME := material-dark
+LOCAL_PACKAGE_NAME := MaterialDark
 # Disable proguard, for now.
 #LOCAL_CERTIFICATE := platform
 #LOCAL_PROGUARD_FLAG_FILES := proguard.flags
