@@ -27,9 +27,6 @@ LOCAL_PACKAGE_NAME := MaterialDark
 #LOCAL_CERTIFICATE := platform
 #LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
-LOCAL_ADDITIONAL_DEPENDENCIES += $(LOCAL_PATH)/Android.mk
-include $(call all-makefiles-under,$(LOCAL_PATH))
-
 ifeq ($(TARGET_BOOTANIMATION_HALF_RES),true)
 LOCAL_ASSET_DIR := \
     $(LOCAL_PATH)/assets \
