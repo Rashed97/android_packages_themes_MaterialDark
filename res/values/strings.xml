@@ -19,5 +19,6 @@
 
     <string name="theme_name">Material Dark</string>
     <string name="theme_author">The CyanogenMod Project</string>
+    <string name="theme_email">rashed@linux.com</string>
 
 </resources>
